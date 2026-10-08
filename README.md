@@ -56,10 +56,10 @@ The notebook includes a comparative benchmark that measures execution times acro
 - **Approach:**
   - Recursively splits the array into left and right halves.
   - Computes:
-    1. Maximum subarray entirely in the left half ($\text{Left\_MSS}$).
-    2. Maximum subarray entirely in the right half ($\text{Right\_MSS}$).
-    3. Maximum subarray spanning across the midpoint ($\text{Crossing\_Sum}$).
-  - Returns $\max(\text{Left\_MSS}, \text{Right\_MSS}, \text{Crossing\_Sum})$.
+    1. Maximum subarray entirely in the left half (`Left_MSS`).
+    2. Maximum subarray entirely in the right half (`Right_MSS`).
+    3. Maximum subarray spanning across the midpoint (`Crossing_Sum`).
+  - Returns `max(Left_MSS, Right_MSS, Crossing_Sum)`.
 - **Recurrence & Complexity:**
   - Recurrence Relation: $T(n) = 2T(n/2) + \Theta(n)$
   - **Time Complexity:** $\mathcal{O}(n \log n)$ by the Master Theorem.
